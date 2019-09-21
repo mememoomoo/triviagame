@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+    <title>Bar Trivia Game | Jack R Larsen</title>
+    <link rel="shortcut icon" href="#">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Mansalva|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
-<body>
-    
+
+<body class="background">
+    <div class="container box">
+    <!--Title-->
+    <div class="container">
+        <div class="row mx-auto text-center">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1>Bar Trivia on Your Computer!</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--Count Down-->
+    <div class="container">
+        <div class="row mx-auto text-center">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div id="timer"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Question-->
+    <div class="container">
+        <div class="row mx-auto text-center">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div id="question"></div>
+            </div>
+
+            <!--Answers-->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div id="answers"></div>
+
+                <!--Gif-->
+                <div id="gif"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mx-auto text-center">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <button class="btn btn-outline-dark" id="start">Start Game</button><br>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <button class="btn btn-outline-dark" id="reset">Go Again?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
