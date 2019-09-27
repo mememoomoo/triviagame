@@ -89,14 +89,6 @@ $(document).ready(function () {
     var emptyArray = [];
     var hide;
 
-    //Reset game
-    // function resetGame() {
-    //     $("#timer").empty();
-    //     $("#question").empty();
-    //     $("#answers").empty();
-    //     $("#gif").empty();
-    // };
-
     //Hide Play Again Button
     $("#reset").hide();
 
