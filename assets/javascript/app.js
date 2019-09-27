@@ -84,7 +84,7 @@ $(document).ready(function () {
     var select;
     var questionHolder = [];
     var random;
-    var playerGuess = "";
+    var playerGuess = 0;
     var questionCount = trivia.length;
     var emptyArray = [];
     var hide;
@@ -163,11 +163,11 @@ $(document).ready(function () {
     }
 
     //select answer
-    $(".answerselect").on("click", function () {
+    $(document).on("click", ".answerselect", function () {
 
         playerGuess = parseInt($(this).attr("guessvalue"));
 
-        if (playerGuess === select.answer) {
+        if (playerGuess === select.correct) {
             timerStop();
             correct++;
             playerGuess = "";
